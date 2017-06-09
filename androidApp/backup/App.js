@@ -13,7 +13,6 @@ import theme from './js/config/theme'
 // third
 import Icon from 'react-native-vector-icons/Ionicons'
 import {StackNavigator, TabNavigator} from 'react-navigation';
-import ScrollableTabView, {DefaultTabBar, } from 'react-native-scrollable-tab-view';
 
 class Root extends Component {
 
@@ -38,14 +37,7 @@ class Root extends Component {
     return (
       <View style={styles.container}>
         <View style={styles.content}>
-          <ScrollableTabView
-            tabBarActiveTextColor={theme.hpRed}
-            tabBarInactiveTextColor={theme.hpGray}
-            tabBarUnderlineStyle={{backgroundColor: theme.hpRed}}
-          >
-            <Text tabLabel='栏目1'>栏目1</Text>
-            <Text tabLabel='栏目2'>栏目2</Text>
-          </ScrollableTabView>
+          <Text>hello</Text>
         </View>
         <View style={styles.tabbar}>
           <View style={styles.tab}>
@@ -53,19 +45,19 @@ class Root extends Component {
             <Text style={styles.tabText}>主页</Text>
           </View>
           <View style={styles.tab}>
-            <Icon name="ios-home" size={25} color={theme.hpGray}/>
+            <Icon name="ios-home" size={25} color="#fff"/>
             <Text style={styles.tabText}>主页</Text>
           </View>
           <View style={styles.tab}>
-            <Icon name="ios-home" size={25} color={theme.hpGray}/>
+            <Icon name="ios-home" size={25} color="#fff"/>
             <Text style={styles.tabText}>主页</Text>
           </View>
           <View style={styles.tab}>
-            <Icon name="ios-home" size={25} color={theme.hpGray}/>
+            <Icon name="ios-home" size={25} color="#fff"/>
             <Text style={styles.tabText}>主页</Text>
           </View>
           <View style={styles.tab}>
-            <Icon name="ios-home" size={25} color={theme.hpGray}/>
+            <Icon name="ios-home" size={25} color="#fff"/>
             <Text style={styles.tabText}>主页</Text>
           </View>
         </View>
@@ -85,7 +77,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     height: 50,
     borderTopWidth: 1,
-    borderTopColor: theme.hpGray
+    borderTopColor: '#ccc'
   },
   tab: {
     flex: 1,
@@ -109,7 +101,7 @@ const styles = StyleSheet.create({
 })
 
 const androidApp = StackNavigator({
-  Root: {screen: Root}
+  Home: {screen: Root}
 });
 
 AppRegistry.registerComponent('androidApp', () => androidApp);

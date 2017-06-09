@@ -5,5 +5,6 @@ import {
 module.exports = {
   screenWidth: Dimensions.get('window').width,
   screenHeight: Dimensions.get('window').height,
-  hpRed: '#bd1e2d'
+  hpRed: '#bd1e2d',
+  hpGray: '#a0a0a0',
 }
