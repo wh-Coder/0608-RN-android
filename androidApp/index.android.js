@@ -1,2 +1,2 @@
 import './App'
-// import './navigatorTest/AppBothNavigator'
+// import './third/navigatorTest/AppBothNavigator'
